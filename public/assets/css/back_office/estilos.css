@@ -1,0 +1,149 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.bg-img {
+    background-image: url("../../images/fondo.jpg");
+}
+
+.bg-img-agency {
+    background-image: url("../../images/fondo-agency.jpg");
+}
+
+#navbar-container {
+    background-color: #26a69a;
+}
+
+#content-container::before {
+    background-color: #000066;
+}
+
+#mainnav-menu>.active-sub>a,
+#mainnav-menu>.active-sub>a:hover {
+    background-color: #26a69a;
+}
+
+#container.mainnav-sm #mainnav-menu>.active-link>a,
+#container.mainnav-sm #mainnav-menu>.active-link a:hover,
+#container.mainnav-sm #mainnav-menu>.active-sub>a,
+#container.mainnav-sm #mainnav-menu>.active-sub a:hover {
+    background-color: #000066;
+}
+
+.navbar-header::before {
+    background-color: #26a69a;
+}
+
+#new-route-museum-modal .create_item img {
+    border-radius: 5px;
+}
+
+#new-route-museum-modal .create_item {
+    border-radius: 5px;
+    filter: grayscale(.4);
+}
+
+#new-route-museum-modal .create_item:hover {
+    /* border-radius: 5px; */
+    filter: grayscale(0);
+}
+
+#mapid {
+    height: 35vw;
+    border-radius: 5px;
+    z-index: 0 !important;
+}
+
+.front_search {
+    z-index: 0;
+}
+
+div#search {
+    background-color: white;
+    opacity: 0.9;
+    position: absolute;
+    top: 10px;
+    left: 50px;
+    width: auto;
+    padding: 10px;
+    z-index: 1;
+}
+
+div#search input {
+    width: 200px;
+}
+
+div#results {
+    font-style: sans-serif;
+    color: black;
+    font-size: 75%;
+    width: 100%;
+}
+
+.my-new-list {
+    list-style: none;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.pt-5 {
+    padding-top: 5%;
+}
+
+.sep_button_panel {
+    margin-right: 5px;
+}
+
+.well-schedule {
+    display: none;
+    min-height: 20px;
+    padding: 19px;
+    margin-bottom: 20px;
+    background-color: #f5f5f5;
+    border: 1px solid #e3e3e3;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+}
+
+/* #mapid {
+    z-index: 0 !important;
+} */
+
+#table_content tr th:nth-child(2),
+#table_content tr td:nth-child(2) {
+    display: none;
+}
+
+.p-2 {
+    padding: 2%;
+}
+
+@media screen and (max-width: 400px) {
+    div#search input {
+        width: 100%;
+    }
+}
+
+.bootstrap-select {
+    margin-bottom: 0px;
+}
+
+.fixed-table-body {
+    min-height: 542px;
+}
+
+input[type='number'] {
+    -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}

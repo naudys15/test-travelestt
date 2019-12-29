@@ -1,0 +1,687 @@
+/* GENERAL */
+html,
+body {
+    color: #000;
+    background-color: #fff;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    height: 100%;
+    z-index: 1;
+}
+
+a {
+    color: #1a1a1a;
+}
+
+#language-btn {
+    background-color: transparent;
+    color: white;
+}
+
+#language-btn:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
+.header-margin {
+    margin-top: 82px;
+}
+
+.btn-main {
+    color: #fff;
+    background-color: #00B0AB;
+    border-color: #00B0AB;
+}
+
+.btn-outline-main {
+    color: #00B0AB;
+    border-color: #00B0AB;
+    /* -webkit-box-shadow: 0px 0px 17px -5px rgba(148, 148, 148, 1);
+    -moz-box-shadow: 0px 0px 17px -5px rgba(148, 148, 148, 1);
+    box-shadow: 0px 0px 17px -5px rgba(148, 148, 148, 1); */
+}
+
+.btn-outline-main:hover {
+    color: white;
+    background-color: #00B0AB;
+    /* -webkit-box-shadow: 0px 0px 17px -5px rgba(148, 148, 148, 1);
+    -moz-box-shadow: 0px 0px 17px -5px rgba(148, 148, 148, 1);
+    box-shadow: 0px 0px 17px -5px rgba(148, 148, 148, 1); */
+}
+
+.bg_img {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bg-main {
+    background-color: #00B0AB !important;
+}
+
+.h-60 {
+    height: 60% !important;
+}
+
+.dark_item {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.experience_items span {
+    border-radius: 0 0 10px;
+}
+
+.like {
+    font-size: 1.35rem;
+}
+
+.text-main {
+    color: #00B0AB !important;
+}
+
+.text-aqua {
+    color: #59BFBC !important;
+}
+
+.dificultad {
+    padding: .1rem 1rem;
+    line-height: 16px;
+}
+
+.dificultad small {
+    font-weight: bold;
+    font-size: .7rem;
+}
+
+.page-link {
+    color: #000066;
+    border: 1px solid #dee2e6;
+}
+
+.page-item.active .page-link {
+    z-index: 1;
+    color: #fff;
+    background-color: #000066;
+    border-color: #000066;
+}
+
+.destino a {
+    text-decoration: none;
+}
+
+.destino a:hover {
+    text-decoration: none;
+}
+
+.destino_resume {
+    top: 0;
+    height: 100%;
+    width: 100%;
+    transition: opacity .35s;
+    background-color: #59BFBC;
+    opacity: 0;
+}
+
+.destino_resume:hover {
+    opacity: 1;
+}
+
+.destino_resume .destino_descripcion {
+    font-size: .9rem;
+}
+
+.calificacion {
+    color: #FFE66D;
+}
+
+/* HEADER */
+.navbar-top {
+    z-index: 5;
+    height: 2rem;
+    background-color: #11163d;
+}
+
+nav {
+    background-color: #59BFBC !important;
+}
+
+.navbar-brand {
+    max-width: 150px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+    font-weight: 600;
+}
+
+.navbar-light .navbar-toggler {
+    border-color: #fff;
+}
+
+.navbar-top>.d-flex {
+    float: right;
+    height: 100%;
+}
+
+.navbar-top>.d-flex>i {
+    font-size: 0.8rem;
+    color: #fff;
+}
+
+header #login {
+    right: 0;
+    top: 145%;
+    background-color: white;
+    border-radius: 5px;
+    width: 100%;
+    box-shadow: rgb(148, 148, 148) 0px 0px 17px -5px;
+    display: none;
+}
+
+header #submenu {
+    right: 0;
+    top: 145%;
+    background-color: white;
+    border-radius: 5px;
+    width: 100%;
+    box-shadow: rgb(148, 148, 148) 0px 0px 17px -5px;
+    display: none;
+}
+
+/* FOOTER */
+footer {
+    font-size: .85rem;
+    background-color: #333;
+    color: white;
+}
+
+footer h5 {
+    color: #ccc;
+}
+
+footer ul {
+    margin-bottom: 0;
+}
+
+footer ul li {
+    list-style: none;
+    margin-bottom: .5rem;
+    color: #999;
+}
+
+/* MI VIAJE SIDEBAR */
+#mi_viaje_sidebar {
+    /* width: 500px; */
+    max-width: 95%;
+    background-color: #1A535C;
+    height: 100%;
+    max-height: 100%;
+    padding-top: 135px;
+    position: fixed;
+    top: 0;
+    right: -95%;
+    z-index: 500;
+    overflow-y: scroll;
+    transition: right .5s;
+}
+
+#mi_viaje_sidebar #nuevo_viaje img {
+    margin-left: -25px;
+}
+
+#mi_viaje_sidebar .viaje_content,
+#mi_viaje_sidebar #nuevo_viaje {
+    text-decoration: none;
+}
+
+#mi_viaje_sidebar .viaje_img {
+    height: 130px;
+}
+
+.sidebar_on {
+    /* display: block !important; */
+    right: 0 !important;
+    /* animation: mostrar_sidebar 2s; */
+
+}
+
+.margin_header {
+    margin-top: 80px;
+}
+
+/* HOME */
+#hero_home {
+    background-image: url(../images/home_bg.png);
+    position: relative;
+}
+
+#hero_home #hero_container {
+    z-index: 10;
+}
+
+#search_hero_input {
+    height: 50px;
+    border: 0;
+}
+
+#search_hero_input:focus {
+    box-shadow: none;
+}
+
+#search_hero_button {
+    height: 50px;
+}
+
+#top_destinos {
+    top: 110%;
+    left: 0;
+    width: 100%;
+    margin-top: .5rem;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(51, 51, 51, .3);
+    display: none;
+}
+
+#top_destinos_content {
+    max-height: 300px;
+    overflow: auto;
+}
+
+#top_destinos h5 {
+    color: #0caaa5;
+}
+
+#top_destinos ul li {
+    list-style-type: none;
+    margin-bottom: .75rem;
+}
+
+#top_destinos ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+#hero_home::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .25);
+    position: absolute;
+    top: 0;
+}
+
+#principales_destinos .destino_info {
+    bottom: 0;
+    text-decoration: none;
+    height: 100px;
+    transition: height .25s;
+    background-color: rgba(0, 176, 171, .9);
+}
+
+#principales_destinos .destino_info:hover {
+    height: 100%;
+}
+
+#lugares_naturales_cerca {
+    margin-top: -100px;
+}
+
+.lugar_cerca_content {
+    height: 125px;
+    border-radius: 5px;
+    color: white;
+}
+
+.lugar_cerca_title {
+    font-size: 1.35rem;
+    font-weight: 600;
+}
+
+.lugar_cerca_title,
+.lugar_cerca_distance {
+    z-index: 5;
+}
+
+.ubicacion_title {
+    color: #333;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.sendero_distance,
+.item_price {
+    color: #59bfbc;
+    font-size: .85rem;
+}
+
+ul.navbar-nav>li>a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.85rem;
+}
+
+#mapid,
+#map_destino {
+    height: 250px;
+    border-radius: 5px;
+}
+
+.destino_img {
+    /* box-shadow: 0px 0px 4px rgba(51,51,51,.15); */
+    -webkit-box-shadow: 0px 0px 17px -5px rgba(148, 148, 148, 1);
+    -moz-box-shadow: 0px 0px 17px -5px rgba(148, 148, 148, 1);
+    box-shadow: 0px 0px 17px -5px rgba(148, 148, 148, 1);
+    border: 1px solid rgba(51, 51, 51, .1);
+    border-radius: 5px;
+}
+
+/* NEARBY PLACES */
+#to_do_sidebar {
+    font-size: .75rem;
+    list-style: none;
+}
+
+#to_do_sidebar ul {
+    padding-left: 15px;
+}
+
+#to_do_sidebar li {
+    list-style: none;
+}
+
+#to_do_sidebar li label {
+    color: #6c757d;
+    padding-top: 5px;
+    width: 100%;
+}
+
+#to_do_sidebar input[type='checkbox'] {
+    display: none;
+}
+
+#filtro {
+    font-size: .75rem;
+    flex-wrap: wrap;
+}
+
+#filtro button {
+    font-size: .75rem;
+    padding: .35rem 1.25rem;
+}
+
+#to_do_content .btn_guardar_a_mi_viaje {
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    font-size: .85rem;
+}
+
+#to_do_sidebar li>input[type='checkbox']+label {
+    cursor: pointer;
+}
+
+#to_do_sidebar li>label.adjust:before {
+    content: '\0000a0\0000a0\0000a0\0000a0\0000a0';
+    border: 1px solid #808080;
+    height: 10%;
+    width: 10%;
+    margin-right: 5%;
+}
+
+#to_do_sidebar li>input[type='checkbox']:checked+label:before {
+    content: '\0000a0✓\0000a0';
+    color: #59BFBC;
+}
+
+.place_img {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.place_info {
+    font-size: .95rem;
+}
+
+i.fa-bicycle {
+    font-size: 1.5rem;
+}
+
+/* DETALLE*/
+.arrows i {
+    font-size: 2.5rem;
+    color: #000066;
+}
+
+.arrows i:nth-child(1) {
+    transform: rotate(45deg);
+}
+
+.arrows i:nth-child(2) {
+    transform: rotate(135deg);
+}
+
+
+.opinions>.text-secondary {
+    font-size: 0.75rem;
+    margin-top: 5%;
+    margin-bottom: 0;
+}
+
+img.avatar {
+    border-radius: 100%;
+    max-width: 25px;
+}
+
+/* .row>.col-4 p {
+    font-size: 0.5rem;
+    margin-bottom: 0;
+    margin-left: 5%;
+} */
+
+.row>.col-4>span:nth-child(2) {
+    color: #000066;
+}
+
+.icono_servicio {
+    font-size: 2.5rem;
+}
+
+#galeria_viaje {
+    height: 350px;
+    overflow: hidden;
+}
+
+#galeria_viaje img {
+    height: 100% !important;
+    width: 100%;
+    opacity: 0;
+}
+#mi_opinion_titulo{
+    height: 50px;
+}
+/* MI VIAJE */
+#mi_viaje_hero,
+#lugares_cercanos_hero,
+.page_hero {
+    position: relative;
+    height: 270px;
+}
+
+.page_hero .page_hero_content {
+    z-index: 100;
+}
+
+.page_hero::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .35);
+    /* z-index: 100; */
+}
+
+#mi_viaje_tab .nav-item {
+    margin-right: 1rem;
+}
+
+#mi_viaje_tab .nav-item a {
+    color: #6c757d;
+    border-radius: 0;
+}
+
+#mi_viaje_tab .nav-item a.active {
+    color: #1A535C;
+    background-color: transparent;
+    border-bottom: 3px solid #4ECDC4;
+}
+
+/* QUIENES SOMOS */
+.team_person img {
+    filter: grayscale(1);
+}
+
+.team_person img:hover {
+    filter: grayscale(0);
+}
+
+/* DESTINOS */
+#destinos_travelestt .list-group-horizontal .list-group-item {
+    padding: .3rem .6rem;
+}
+
+/* TIMELINE VISTA RUTA */
+/* Timeline holder */
+ul.timeline {
+    list-style-type: none;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+/* Timeline vertical line */
+ul.timeline:before {
+    content: ' ';
+    background: #bfc5c9;
+    display: inline-block;
+    position: absolute;
+    left: 16px;
+    width: 4px;
+    height: 100%;
+    z-index: 400;
+    border-radius: 1rem;
+}
+
+li.timeline-item {
+    margin: 20px 0;
+}
+
+/* Timeline item arrow */
+.timeline-arrow {
+    border-top: 0.5rem solid transparent;
+    border-right: 0.5rem solid #fff;
+    border-bottom: 0.5rem solid transparent;
+    display: block;
+    position: absolute;
+    left: 2rem;
+}
+
+/* Timeline item circle marker */
+li.timeline-item::before {
+    content: ' ';
+    background: white;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid #ff6f6f;
+    left: 11px;
+    width: 14px;
+    height: 14px;
+    z-index: 400;
+    /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); */
+}
+
+
+
+/* ----------------------- */
+.cursor {
+    cursor: pointer;
+}
+
+.images_entity {
+    margin: 0 !important;
+    padding: 0 !important;
+    height: 50vh;
+}
+
+.images_entity_two {
+    display: table-row;
+}
+
+.images_entity_three {
+    height: 25vh;
+}
+
+.images_entity_four {
+    height: 35vh;
+}
+
+.images_entity_five {
+    height: 15vh;
+}
+
+/* ESTILOS AGENCIA DE VIAJES */
+#agencia_hero{
+    height: 75%;
+    background-image: url('../images/134.jpg');
+    background-size: cover;
+    background-position: center;
+}
+#agencia_hero_content{
+    background-color: rgba(0, 0, 0, .25);
+}
+.cliente img{
+    opacity: .25;
+    /* filter: grayscale(1); */
+}
+/* MEDIA QUERIES */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    #mi_viaje_sidebar {
+        right: -500px;
+        max-width: 500px;
+    }
+}
+
+@media (min-width: 768px) {
+    header #login {
+        width: 325px;
+    }
+
+    header #submenu {
+        width: 225px;
+    }
+
+    #filtro button {
+        padding: .35rem 1.75rem;
+    }
+}
+
+@media (min-width: 992px) {
+    #top_destinos {
+        left: -40px;
+        width: 115%;
+    }
+
+    .place_img {
+        height: 100%;
+    }
+
+}
+
+.avatar_user {
+    /* background-color: white; */
+    color: #fff;
+    /* font-size: 20px; */
+}
